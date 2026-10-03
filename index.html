@@ -1,1 +1,344 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PromptlyAI — free AI prompts and tools for students, creators, developers and everyday work."><meta name="theme-color" content="#070b18"><title>PromptlyAI — Free AI Prompts & Tools</title><link rel="stylesheet" href="style.css"></head><body><header class="nav"><a class="brand" href="#"><span>✦</span> PromptlyAI</a><nav><a href="#prompts">Prompts</a><a href="#categories">Categories</a><a href="#tools">Tools</a></nav><a class="navbtn" href="#prompts">Explore Free</a></header><main><section class="hero"><div class="badge">⚡ Free AI productivity hub</div><h1>Turn one idea into<br><em>better work.</em></h1><p>Ready-to-use AI prompts for studying, coding, writing, creativity and everyday tasks. Copy, customize, create.</p><div class="actions"><a class="primary" href="#prompts">Explore prompts →</a><a class="secondary" href="#tools">Discover tools</a></div><div class="trust"><span>✓ Free to use</span><span>✓ No signup</span><span>✓ Global</span></div></section><section id="categories" class="section"><span class="eyebrow">CATEGORIES</span><h2>Find the right prompt for your task.</h2><p style="color:#8f9ab2">Study, Coding, Writing, Creative, Career and Productivity prompts.</p></section><section id="magic" class="section magic-section"><div class="sectionhead"><div><span class="eyebrow">PROMPT LAB</span><h2>Turn your idea into a better prompt.</h2></div><p>No signup. No complicated settings.</p></div><div class="magic-grid"><div class="magic-card"><span class="magic-icon">✨</span><h3>Prompt Builder</h3><p>Describe what you want in normal words. Get a structured prompt you can paste into any AI.</p><div class="input-wrap"><textarea id="ideaInput" placeholder="Example: I need a website for my portfolio"></textarea></div><select id="ideaType"><option>General</option><option>Study</option><option>Coding</option><option>Writing</option><option>Creative</option><option>Career</option><option>Productivity</option><option>Marketing</option><option>Business</option><option>Research</option><option>Image Generation</option><option>Social Media</option><option>Emails</option><option>Presentations</option><option>Data Analysis</option><option>Other</option></select><button class="primary magic-btn" id="buildBtn">Build my prompt →</button><pre id="builderResult" class="result-box">Your generated prompt will appear here.</pre><div class="result-actions"><button class="copy result-copy" id="copyBuilder">Copy prompt</button></div></div><div class="magic-card"><span class="magic-icon">🪄</span><h3>Fix My Prompt</h3><p>Paste a weak prompt. PromptlyAI restructures it with better context, constraints and output format.</p><div class="input-wrap"><textarea id="fixInput" placeholder="Example: make me a website"></textarea></div><button class="primary magic-btn" id="improveBtn">Improve my prompt →</button><pre id="fixResult" class="result-box">Your improved prompt will appear here.</pre><div class="result-actions"><button class="copy result-copy" id="copyFix">Copy prompt</button></div></div></div></section><section id="prompts" class="section"><div class="sectionhead"><div><span class="eyebrow">PROMPT LIBRARY</span><h2>Start with a prompt</h2></div><p>Copy a prompt and make it yours.</p></div><div class="cards" id="promptGrid"></div><p class="mini-trend">🔥 Most copied: <strong id="popular">—</strong></p></section><section id="tools" class="section"><span class="eyebrow">AI TOOLKIT</span><h2>Useful AI tools, without the noise.</h2><div class="toolrow" id="toolList"></div></section></main><footer><div class="brand"><span>✦</span> PromptlyAI</div><p>Free AI resources for a smarter internet.</p><small>© 2026 PromptlyAI</small></footer><script src="app.js"></script></body></html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="monetag" content="5c2bfb376336aea6ce8b8f1a06ff7221">
+
+  <meta
+    name="description"
+    content="PromptlyAI — free AI prompts and tools for students, creators, developers and everyday work."
+  >
+
+  <meta name="theme-color" content="#070b18">
+
+  <title>PromptlyAI — Free AI Prompts & Tools</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#">
+      <span>✦</span> PromptlyAI
+    </a>
+
+    <nav>
+      <a href="#prompts">Prompts</a>
+      <a href="#categories">Categories</a>
+      <a href="#tools">Tools</a>
+    </nav>
+
+    <a class="navbtn" href="#prompts">
+      Explore Free
+    </a>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="badge">
+        ⚡ Free AI productivity hub
+      </div>
+
+      <h1>
+        Turn one idea into<br>
+        <em>better work.</em>
+      </h1>
+
+      <p>
+        Ready-to-use AI prompts for studying, coding, writing, creativity and everyday tasks. Copy, customize, create.
+      </p>
+
+      <div class="actions">
+        <a class="primary" href="#prompts">
+          Explore prompts →
+        </a>
+
+        <a class="secondary" href="#tools">
+          Discover tools
+        </a>
+      </div>
+
+      <div class="trust">
+        <span>✓ Free to use</span>
+        <span>✓ No signup</span>
+        <span>✓ Global</span>
+      </div>
+
+    </section>
+
+
+    <section id="magic" class="section magic-section">
+
+      <div class="sectionhead">
+
+        <div>
+          <span class="eyebrow">
+            PROMPT LAB
+          </span>
+
+          <h2>
+            Turn your idea into a better prompt.
+          </h2>
+        </div>
+
+        <p>
+          No signup. No complicated settings.
+        </p>
+
+      </div>
+
+
+      <div class="magic-grid">
+
+
+        <div class="magic-card">
+
+          <span class="magic-icon">
+            ✨
+          </span>
+
+          <h3>
+            Prompt Builder
+          </h3>
+
+          <p>
+            Describe what you want in normal words. Get a structured prompt you can paste into any AI.
+          </p>
+
+          <div class="input-wrap">
+
+            <textarea
+              id="ideaInput"
+              placeholder="Example: I need a website for my portfolio"
+            ></textarea>
+
+          </div>
+
+
+          <select id="ideaType">
+
+            <option>General</option>
+            <option>Study</option>
+            <option>Coding</option>
+            <option>Writing</option>
+            <option>Creative</option>
+            <option>Career</option>
+            <option>Productivity</option>
+            <option>Marketing</option>
+            <option>Business</option>
+            <option>Research</option>
+            <option>Image Generation</option>
+            <option>Social Media</option>
+            <option>Emails</option>
+            <option>Presentations</option>
+            <option>Data Analysis</option>
+            <option>Other</option>
+
+          </select>
+
+
+          <button
+            class="primary magic-btn"
+            id="buildBtn"
+          >
+            Build my prompt →
+          </button>
+
+
+          <pre
+            id="builderResult"
+            class="result-box"
+          >Your generated prompt will appear here.</pre>
+
+
+          <div class="result-actions">
+
+            <button
+              class="copy result-copy"
+              id="copyBuilder"
+            >
+              Copy prompt
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="magic-card">
+
+          <span class="magic-icon">
+            🪄
+          </span>
+
+          <h3>
+            Fix My Prompt
+          </h3>
+
+          <p>
+            Paste a weak prompt. PromptlyAI restructures it with better context, constraints and output format.
+          </p>
+
+
+          <div class="input-wrap">
+
+            <textarea
+              id="fixInput"
+              placeholder="Example: make me a website"
+            ></textarea>
+
+          </div>
+
+
+          <button
+            class="primary magic-btn"
+            id="improveBtn"
+          >
+            Improve my prompt →
+          </button>
+
+
+          <pre
+            id="fixResult"
+            class="result-box"
+          >Your improved prompt will appear here.</pre>
+
+
+          <div class="result-actions">
+
+            <button
+              class="copy result-copy"
+              id="copyFix"
+            >
+              Copy prompt
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section
+      id="categories"
+      class="section"
+    >
+
+      <span class="eyebrow">
+        CATEGORIES
+      </span>
+
+      <h2>
+        Find the right prompt for your task.
+      </h2>
+
+      <p style="color:#8f9ab2">
+        Study, Coding, Writing, Creative, Career, Productivity and more.
+      </p>
+
+    </section>
+
+
+
+    <section
+      id="prompts"
+      class="section"
+    >
+
+      <div class="sectionhead">
+
+        <div>
+
+          <span class="eyebrow">
+            PROMPT LIBRARY
+          </span>
+
+          <h2>
+            Start with a prompt
+          </h2>
+
+        </div>
+
+        <p>
+          Copy a prompt and make it yours.
+        </p>
+
+      </div>
+
+
+      <div
+        class="cards"
+        id="promptGrid"
+      ></div>
+
+
+      <p class="mini-trend">
+
+        🔥 Most copied:
+        <strong id="popular">
+          —
+        </strong>
+
+      </p>
+
+    </section>
+
+
+
+    <section
+      id="tools"
+      class="section"
+    >
+
+      <span class="eyebrow">
+        AI TOOLKIT
+      </span>
+
+      <h2>
+        Useful AI tools, without the noise.
+      </h2>
+
+      <div
+        class="toolrow"
+        id="toolList"
+      ></div>
+
+    </section>
+
+  </main>
+
+
+
+  <footer>
+
+    <div class="brand">
+      <span>✦</span> PromptlyAI
+    </div>
+
+    <p>
+      Free AI resources for a smarter internet.
+    </p>
+
+    <small>
+      © 2026 PromptlyAI
+    </small>
+
+  </footer>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
+```
